@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">test_rookie</string>
+
+    <string name="cell_fill">Клеточное наполнение</string>
+
+    <string name="alive_cell_header">Живая</string>
+    <string name="alive_cell_sub">и шевелится!</string>
+    <string name="life_cell_header">Жизнь</string>
+    <string name="life_cell_sub">Ку-ку!</string>
+    <string name="dead_cell_header">Мертвая</string>
+    <string name="dead_cell_sub">или прикидывается</string>
+
+    <string name="create_button_text">Сотворить</string>
+
+</resources>

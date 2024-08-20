@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".main.MainFragment">
+
+
+
+    <TextView
+        android:id="@+id/cell_fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:padding="@dimen/medium_padding"
+        android:text="@string/cell_fill"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cell_fill"
+        android:layout_above="@id/create_btn"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:paddingStart="@dimen/medium_padding"
+        android:paddingEnd="@dimen/medium_padding"/>
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/medium_padding"
+        android:text="@string/create_button_text"
+        android:textAllCaps="true"
+        android:background="@drawable/create_button"/>
+
+</RelativeLayout>

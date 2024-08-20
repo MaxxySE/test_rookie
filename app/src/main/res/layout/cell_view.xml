@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/small_padding"
+    android:paddingBottom="@dimen/small_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/element_back">
+
+        <ImageView
+            android:id="@+id/element_image"
+            android:layout_width="@dimen/large_size"
+            android:layout_height="@dimen/large_size"
+            android:layout_margin="@dimen/medium_padding"
+            android:src="@drawable/alive" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/element_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alive_cell_header"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="@dimen/medium_text"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/element_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alive_cell_sub"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
